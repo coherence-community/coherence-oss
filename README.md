@@ -1,2 +1,2 @@
 # coherence-oss
-Parent POM for Coherence open source projects
+The parent POM for Coherence open source projects
