@@ -4,7 +4,7 @@
 
   <groupId>com.oracle.coherence</groupId>
   <artifactId>coherence-oss</artifactId>
-  <version>2.0.1-SNAPSHOT</version>
+  <version>2.0.1</version>
   <packaging>pom</packaging>
 
   <name>Coherence OSS Parent</name>
@@ -97,7 +97,7 @@
       scm:git:https://github.com/coherence-community/coherence-oss.git
     </developerConnection>
     <url>https://github.com/coherence-community/coherence-oss.git</url>
-    <tag>HEAD</tag>
+    <tag>v2.0.1</tag>
   </scm>
 
   <build>
