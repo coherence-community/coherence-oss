@@ -1,0 +1,27 @@
+box: maven:3.5.0-jdk-9-slim 
+dev:
+  steps:
+    - script: 
+      name: export for debugging
+      code: export
+    - script:
+      name: maven build
+      code: echo $MAVEN_SETTINGS_XML > settings.xml ; mvn -s settings.xml -DaltDeploymentRepository=snapshots::default::$MAVEN_SNAPSHOTS_URL clean install deploy
+
+build:
+  steps:
+    - script:
+      name: export enviroment for debugging purposes
+      code: export
+    - script:
+      name: maven build
+      code: echo $MAVEN_SETTINGS_XML > settings.xml ; mvn -s settings.xml clean install
+
+deploy:
+  steps:
+    - script:
+      name: export environment for debugging purposes
+      code: export
+    - script:
+      name: maven deploy
+      code: echo $MAVEN_SETTINGS_XML > settings.xml ; mvn -s settings.xml -DaltDeploymentRepository=snapshots::default::$MAVEN_SNAPSHOTS_URL clean install deploy
