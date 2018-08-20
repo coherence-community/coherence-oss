@@ -49,18 +49,6 @@
     <dependencies>
 
       <dependency>
-        <groupId>com.oracle.coherence</groupId>
-        <artifactId>coherence</artifactId>
-        <version>${coherence.version}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>com.oracle.coherence</groupId>
-        <artifactId>coherence-rest</artifactId>
-        <version>${coherence.version}</version>
-      </dependency>
-
-      <dependency>
         <groupId>junit</groupId>
         <artifactId>junit</artifactId>
         <version>${junit.version}</version>
